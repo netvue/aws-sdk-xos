@@ -80,7 +80,11 @@ unsigned char setTag = 0x31;
     
     unsigned char sig[256];
     size_t sigLen = sizeof(sig);
+#if TARGET_OS_IPHONE
     OSStatus sanityCheck = SecKeyRawSign(privateKeyRef, kSecPaddingPKCS1SHA256, SHA256Digest, sizeof(SHA256Digest), sig, &sigLen);
+#else
+    OSStatus sanityCheck = -1;
+#endif
     if (sanityCheck != noErr) {
         return nil;
     }

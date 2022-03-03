@@ -1935,6 +1935,7 @@ internalDictionaryToAddSubTaskTo: (NSMutableDictionary *) internalDictionaryToAd
 
 #pragma mark - UIApplicationDelegate interceptor
 
+#if TARGET_OS_IPHONE
 + (void)interceptApplication:(UIApplication *)application
 handleEventsForBackgroundURLSession:(NSString *)identifier
            completionHandler:(void (^)(void))completionHandler {
@@ -1955,6 +1956,7 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
         }
     }
 }
+#endif
 
 #pragma mark - NSURLSessionDelegate
 

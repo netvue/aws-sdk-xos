@@ -13,7 +13,9 @@
 // permissions and limitations under the License.
 //
 
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#endif
 
 /*!
  Project version number for the AWSCore framework.
