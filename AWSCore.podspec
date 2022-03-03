@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = 'Apache License, Version 2.0'
   s.author       = { 'Amazon Web Services' => 'amazonwebservices' }
   s.ios.deployment_target  = '9.0'
-  s.osx.deployment_target  = '10.15'
+  s.osx.deployment_target  = '10.13'
 
   s.source       = { :git => 'https://github.com/netvue/aws-sdk-xos.git',
                      :tag => s.version}
