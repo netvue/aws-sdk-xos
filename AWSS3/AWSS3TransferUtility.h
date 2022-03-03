@@ -13,8 +13,11 @@
 // permissions and limitations under the License.
 //
 
+#include <TargetConditionals.h>
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#else
+#import <Foundation/Foundation.h>
 #endif
 #import <AWSCore/AWSCore.h>
 #import "AWSS3Service.h"

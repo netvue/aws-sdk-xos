@@ -15,6 +15,7 @@
 
 #import "AWSIoTCSR.h"
 #import "AWSIoTKeychain.h"
+#include <TargetConditionals.h>
 
 unsigned char seqTag = 0x30;
 unsigned char setTag = 0x31;
